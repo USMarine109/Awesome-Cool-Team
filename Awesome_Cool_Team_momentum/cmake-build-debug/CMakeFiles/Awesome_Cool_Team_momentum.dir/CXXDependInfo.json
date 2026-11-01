@@ -1,0 +1,42 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum",
+	"dir-top-bld" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug",
+	"dir-top-src" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/Awesome_Cool_Team_momentum.dir",
+	"sources" : 
+	{
+		"CMakeFiles/Awesome_Cool_Team_momentum.dir/Fenwick_Tree.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/Fenwick_Tree.cpp"
+		},
+		"CMakeFiles/Awesome_Cool_Team_momentum.dir/Load_Dataset.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/Load_Dataset.cpp"
+		},
+		"CMakeFiles/Awesome_Cool_Team_momentum.dir/Segment_Tree.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/Segment_Tree.cpp"
+		},
+		"CMakeFiles/Awesome_Cool_Team_momentum.dir/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/main.cpp"
+		}
+	}
+}

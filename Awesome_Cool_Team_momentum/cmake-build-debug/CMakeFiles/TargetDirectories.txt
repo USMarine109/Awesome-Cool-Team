@@ -1,0 +1,3 @@
+C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/Awesome_Cool_Team_momentum.dir
+C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/rebuild_cache.dir

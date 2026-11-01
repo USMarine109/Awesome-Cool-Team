@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\C__~1.EXE -g -std=gnu++26 -fdiagnostics-color=always -fmodules-ts -fmodule-mapper=CMakeFiles\\Awesome_Cool_Team_momentum.dir\\main.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\Awesome_Cool_Team_momentum.dir\\main.cpp.obj -c C:\\Users\\kenne\\CLionProjects\\Awesome_Cool_Team_momentum\\main.cpp",
+  "file": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/main.cpp",
+  "output": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/Awesome_Cool_Team_momentum.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\C__~1.EXE -g -std=gnu++26 -fdiagnostics-color=always -fmodules-ts -fmodule-mapper=CMakeFiles\\Awesome_Cool_Team_momentum.dir\\Load_Dataset.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\Awesome_Cool_Team_momentum.dir\\Load_Dataset.cpp.obj -c C:\\Users\\kenne\\CLionProjects\\Awesome_Cool_Team_momentum\\Load_Dataset.cpp",
+  "file": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/Load_Dataset.cpp",
+  "output": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/Awesome_Cool_Team_momentum.dir/Load_Dataset.cpp.obj"
+},
+{
+  "directory": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\C__~1.EXE -g -std=gnu++26 -fdiagnostics-color=always -fmodules-ts -fmodule-mapper=CMakeFiles\\Awesome_Cool_Team_momentum.dir\\Segment_Tree.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\Awesome_Cool_Team_momentum.dir\\Segment_Tree.cpp.obj -c C:\\Users\\kenne\\CLionProjects\\Awesome_Cool_Team_momentum\\Segment_Tree.cpp",
+  "file": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/Segment_Tree.cpp",
+  "output": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/Awesome_Cool_Team_momentum.dir/Segment_Tree.cpp.obj"
+},
+{
+  "directory": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.4\\bin\\mingw\\bin\\C__~1.EXE -g -std=gnu++26 -fdiagnostics-color=always -fmodules-ts -fmodule-mapper=CMakeFiles\\Awesome_Cool_Team_momentum.dir\\Fenwick_Tree.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\Awesome_Cool_Team_momentum.dir\\Fenwick_Tree.cpp.obj -c C:\\Users\\kenne\\CLionProjects\\Awesome_Cool_Team_momentum\\Fenwick_Tree.cpp",
+  "file": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/Fenwick_Tree.cpp",
+  "output": "C:/Users/kenne/CLionProjects/Awesome_Cool_Team_momentum/cmake-build-debug/CMakeFiles/Awesome_Cool_Team_momentum.dir/Fenwick_Tree.cpp.obj"
+}
+]
