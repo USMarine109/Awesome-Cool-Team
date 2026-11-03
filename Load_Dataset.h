@@ -1,0 +1,14 @@
+//
+// Created by kenne on 11/1/2026.
+//
+
+#ifndef AWESOME_COOL_TEAM_MOMENTUM_LOAD_DATASET_H
+#define AWESOME_COOL_TEAM_MOMENTUM_LOAD_DATASET_H
+
+
+class Load_Dataset
+{
+};
+
+
+#endif //AWESOME_COOL_TEAM_MOMENTUM_LOAD_DATASET_H
