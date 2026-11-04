@@ -41,7 +41,7 @@ void Segment_Tree<T>::update(int node, int start, int end,int index, T value)
     tree[node] = min(tree[left(node)], tree[right(node)]);
 }
 template <typename T>
-void Segment_Tree<T>::query(int node, int start, int end, int left, int right)
+T Segment_Tree<T>::query(int node, int start, int end, int left, int right)
 {
     if (right < start || end < left)
     {
