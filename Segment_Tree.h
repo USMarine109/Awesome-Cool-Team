@@ -36,7 +36,7 @@ class Segment_Tree
     void build(int node, int start, int end);
     void update(int node, int start, int end, int index, T value);
     T query(int node, int start, int end, int left, int right);
-    void update(int index, T value);
+
 
 public:
     Segment_Tree(const vector<T>& a)
@@ -45,7 +45,7 @@ public:
     {
         tree.resize(4 * n);
     }
-    void update(int node, int start, int end,int index, T value);
+    void update(int index, T value);
     T query(int left, int right);
 
     //https://www.geeksforgeeks.org/cpp/segment-tree-in-cpp/ segamet tree format

@@ -43,15 +43,26 @@ void Segment_Tree<T>::update(int node, int start, int end,int index, T value)
 template <typename T>
 T Segment_Tree<T>::query(int node, int start, int end, int left, int right)
 {
-    if (right < start || end < left)
+    if (right < start || end < 1)
     {
-        return;
+        return INT_MAX;
     }
+    if (left <= start && end <= right)
+    {
         return tree[node];
+    }
+    int m = mid(start, end);
+    return min(query(left(node), start, m, left, right), query(right(node), m + 1, end, left, right));
 }
 template<typename T>
 void Segment_Tree<T>::update(int index, T value)
 {
+    update(1, 0, n - 1, index, value);
+}
 
+template <typename T>
+T Segment_Tree<T>::query(int left, int right)
+{
+    return query(1, 0, n - 1, left, right);
 }
 
