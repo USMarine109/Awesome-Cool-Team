@@ -10,6 +10,7 @@
 #include <string>
 
 #include "Load_Dataset.h"
+#include "Fenwick_Tree.h"
 
 using namespace std;
 
