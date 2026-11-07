@@ -1,14 +1,13 @@
-
-cmake_minimum_required(VERSION 3.10)
-
-project(Awesome_Cool_Team_momentum LANGUAGES CXX)
+cmake_minimum_required(VERSION 4.3)
+project(Awesome_Cool_Team_momentum)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(Awesome_Cool_Team_momentum
-    main.cpp
-    Fenwick_Tree.cpp
-    Segment_Tree.cpp
-    Load_Dataset.cpp
-)
+add_executable(Awesome_Cool_Team_momentum src/main.cpp
+        src/Load_Dataset.cpp
+        src/Load_Dataset.h
+        src/Segment_Tree.cpp
+        src/Segment_Tree.h
+        src/Fenwick_Tree.cpp
+        src/Fenwick_Tree.h
+        test_trees/test_trees.cpp)
