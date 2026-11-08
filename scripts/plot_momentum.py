@@ -31,7 +31,7 @@ def main():
 
     first = True
     for r, m, v, in zip(rows, minute, net):
-        s = int(r["minute"])
+        s = int(r["shift"])
         if s:
             ax.scatter([m], [v], marker="^" if s > 0 else "v", s=110, color="tab:blue" if s > 0 else "tab:red",edgecolor="black", zorder = 5, label = "Momentum shift" if first else None)
             ax.annotate(f"{m}'", (m, v), textcoords="offset points", xytext=(0, 10 if s > 0 else -16), ha="center", fontsize=8)
@@ -42,8 +42,8 @@ def main():
                     for a in (ax, ax2):
                         a.axvline(m - 0.5, color=col, linestyle="--", linewidth=1)
                     ax.text(m - 0.5, ax.get_ylim()[1] * 0.92, f"GOAL {who}", rotation=90, va = "top", ha = "right",fontsize = 8, color = col)
-    ax.set_ylabel("Momentum score\n(+ {home} / - {away})")
-    ax.set_title(f"Momentum{title}")
+    ax.set_ylabel(f"Momentum score\n(+ {home} / - {away})")
+    ax.set_title(f"Momentum: {title}")
     ax.legend(loc = "lower left", fontsize = 8, ncol = 2)
     ax.grid(alpha = 0.3)
 
@@ -62,4 +62,6 @@ def main():
     fig.tight_layout()
     fig.savefig(out, dpi = 130)
     print(f"plot written: {out}")
+
+if __name__ == "__main__":main()
 

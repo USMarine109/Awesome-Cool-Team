@@ -19,17 +19,17 @@ def outcome_of(ev):
     return ""
 
 def main():
-    ap = argparse.ArgumentParser(description =_doc_, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(description =__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--sb-root", required=True, help="root of the cloned statsbomb/open-data repo")
     ap.add_argument("--competition", type=int, default=43, help="competition_id (43 = FIFA World Cup)")
-    ap.add_argument("--season", type=int, nargs="+", default=[106, 3], help="season_id list (106=2022, 3=2018)")
+    ap.add_argument("--seasons", type=int, nargs="+", default=[106, 3], help="season_id list (106=2022, 3=2018)")
     ap.add_argument("--out", default="data", help="output directory")
     args = ap.parse_args()
 
     os.makedirs(args.out, exist_ok=True)
     data = os.path.join(args.sb_root, "data")
     matches = []
-    for season in args.season:
+    for season in args.seasons:
         path = os.path.join(data, "matches", str(args.competition), f"{season}.json")
         if not os.path.exists(path):
             sys.exit(f"missing {path}")
@@ -43,7 +43,7 @@ def main():
         open(os.path.join(args.out, "events.csv"), "w", encoding="utf-8") as fe:
         wm, we = csv.writer(fm), csv.writer(fe)
         wm.writerow(["match_id", "date", "competition", "season", "stage", "home", "away", "home_score", "away_score"])
-        we.writerow(["match_id", "idx", "period", "minute", "second", "team_id", "player_id", "outcome", "x", "y", "end_x", "assist"])
+        we.writerow(["match_id", "idx", "period", "minute", "second", "is_home", "type", "outcome", "x", "y", "end_x", "assist"])
 
         for match in matches:
             mid = match["match_id"]
@@ -54,7 +54,7 @@ def main():
                 continue
             home = match["home_team"]["home_team_name"]
             away = match["away_team"]["away_team_name"]
-            wm.writerow([mid, match["match_date"], clean(match["competition_name"]["competition"]), clean(match["season"]["season_name"]), clean(match.get("competition_stage", {}).get("name", "")), clean(home), clean(away), match["home_score"], match["away_score"]])
+            wm.writerow([mid, match["match_date"], clean(match["competition"]["competition_name"]), clean(match["season"]["season_name"]), clean(match.get("competition_stage", {}).get("name", "")), clean(home), clean(away), match["home_score"], match["away_score"]])
             with open(ev_path, encoding="utf-8") as f:
                 events = json.load(f)
             for event in events:
@@ -67,9 +67,9 @@ def main():
                     end_x = end[0]
                     if event["pass"].get("goal_assist"):
                         assist = 1
-                we.writerow([mid, ev.get("index", 0), event["period"], event["minute"], event["second"], clean(team), clean(event.get("player", {}).get("name", "")), outcome, round(float(loc[0], 1)), round(float(loc[1], 1)), round(float(end_x, 1)), assist])
+                we.writerow([mid, event.get("index", 0), event["period"], event["minute"], event["second"], clean(team), clean(event.get("player", {}).get("name", "")), outcome, round(float(loc[0]), 1), round(float(loc[1]), 1), round(float(end_x), 1), assist])
                 n_events += 1
-    print(f"wrote {len(matches) - skipped} matches and {n_events} events to {args.output}/ (skipped {skipped}) without event files")
+    print(f"wrote {len(matches) - skipped} matches and {n_events} events to {args.out}/ (skipped {skipped}) without event files")
 
 if __name__ == "__main__":
     main()
