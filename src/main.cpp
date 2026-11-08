@@ -55,6 +55,21 @@ bool loadDataset(Session& s) {
             s.opt.matchesCsv,
             error)) {
         cout << "Error: " << error << "\n";
+        cout << "Would you like to enter custom paths for the dataset? (y/n) [n]: ";
+        string ans;
+        if (getline(cin, ans) && (ans == "y" || ans == "Y")) {
+            cout << "Enter matches.csv path [" << s.opt.matchesCsv << "]: ";
+            string mPath;
+            if (getline(cin, mPath) && !mPath.empty()) {
+                s.opt.matchesCsv = mPath;
+            }
+            cout << "Enter events.csv path [" << s.opt.eventsCsv << "]: ";
+            string ePath;
+            if (getline(cin, ePath) && !ePath.empty()) {
+                s.opt.eventsCsv = ePath;
+            }
+            return loadDataset(s);
+        }
         return false;
     }
 
@@ -434,8 +449,15 @@ void menu(Session& s) {
     }
 }
 
-int main() {
+int main(int argc, char* argv[]) {
     Session session;
+
+    if (argc >= 2) {
+        session.opt.matchesCsv = argv[1];
+    }
+    if (argc >= 3) {
+        session.opt.eventsCsv = argv[2];
+    }
 
     filesystem::create_directories(session.opt.outDir);
 
