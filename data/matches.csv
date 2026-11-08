@@ -1,0 +1,129 @@
+match_id,date,competition,season,stage,home,away,home_score,away_score
+7525,2018-06-14,FIFA World Cup,2018,Group Stage,Russia,Saudi Arabia,5,0
+7578,2018-06-15,FIFA World Cup,2018,Group Stage,Egypt,Uruguay,0,1
+7577,2018-06-15,FIFA World Cup,2018,Group Stage,Morocco,Iran,0,1
+7576,2018-06-15,FIFA World Cup,2018,Group Stage,Portugal,Spain,3,3
+7530,2018-06-16,FIFA World Cup,2018,Group Stage,France,Australia,2,1
+7531,2018-06-16,FIFA World Cup,2018,Group Stage,Argentina,Iceland,1,1
+7532,2018-06-16,FIFA World Cup,2018,Group Stage,Peru,Denmark,0,1
+7529,2018-06-16,FIFA World Cup,2018,Group Stage,Croatia,Nigeria,2,0
+7535,2018-06-17,FIFA World Cup,2018,Group Stage,Costa Rica,Serbia,0,1
+7534,2018-06-17,FIFA World Cup,2018,Group Stage,Germany,Mexico,0,1
+7533,2018-06-17,FIFA World Cup,2018,Group Stage,Brazil,Switzerland,1,1
+7538,2018-06-18,FIFA World Cup,2018,Group Stage,Sweden,South Korea,1,0
+7536,2018-06-18,FIFA World Cup,2018,Group Stage,Belgium,Panama,3,0
+7537,2018-06-18,FIFA World Cup,2018,Group Stage,Tunisia,England,1,2
+7541,2018-06-19,FIFA World Cup,2018,Group Stage,Colombia,Japan,1,2
+7539,2018-06-19,FIFA World Cup,2018,Group Stage,Poland,Senegal,1,2
+7540,2018-06-19,FIFA World Cup,2018,Group Stage,Russia,Egypt,3,1
+7542,2018-06-20,FIFA World Cup,2018,Group Stage,Portugal,Morocco,1,0
+7544,2018-06-20,FIFA World Cup,2018,Group Stage,Uruguay,Saudi Arabia,1,0
+7543,2018-06-20,FIFA World Cup,2018,Group Stage,Iran,Spain,0,1
+7547,2018-06-21,FIFA World Cup,2018,Group Stage,Denmark,Australia,1,1
+7546,2018-06-21,FIFA World Cup,2018,Group Stage,France,Peru,1,0
+7545,2018-06-21,FIFA World Cup,2018,Group Stage,Argentina,Croatia,0,3
+7548,2018-06-22,FIFA World Cup,2018,Group Stage,Brazil,Costa Rica,2,0
+7549,2018-06-22,FIFA World Cup,2018,Group Stage,Nigeria,Iceland,2,0
+7550,2018-06-22,FIFA World Cup,2018,Group Stage,Serbia,Switzerland,1,2
+7552,2018-06-23,FIFA World Cup,2018,Group Stage,Belgium,Tunisia,5,2
+7553,2018-06-23,FIFA World Cup,2018,Group Stage,South Korea,Mexico,1,2
+7551,2018-06-23,FIFA World Cup,2018,Group Stage,Germany,Sweden,2,1
+7554,2018-06-24,FIFA World Cup,2018,Group Stage,England,Panama,6,1
+7556,2018-06-24,FIFA World Cup,2018,Group Stage,Japan,Senegal,2,2
+7555,2018-06-24,FIFA World Cup,2018,Group Stage,Poland,Colombia,0,3
+7558,2018-06-25,FIFA World Cup,2018,Group Stage,Uruguay,Russia,3,0
+7559,2018-06-25,FIFA World Cup,2018,Group Stage,Saudi Arabia,Egypt,2,1
+7557,2018-06-25,FIFA World Cup,2018,Group Stage,Iran,Portugal,1,1
+7560,2018-06-25,FIFA World Cup,2018,Group Stage,Spain,Morocco,2,2
+7562,2018-06-26,FIFA World Cup,2018,Group Stage,Australia,Peru,0,2
+7563,2018-06-26,FIFA World Cup,2018,Group Stage,Denmark,France,0,0
+7561,2018-06-26,FIFA World Cup,2018,Group Stage,Iceland,Croatia,1,2
+7564,2018-06-26,FIFA World Cup,2018,Group Stage,Nigeria,Argentina,1,2
+7566,2018-06-27,FIFA World Cup,2018,Group Stage,Mexico,Sweden,0,3
+7567,2018-06-27,FIFA World Cup,2018,Group Stage,South Korea,Germany,2,0
+7565,2018-06-27,FIFA World Cup,2018,Group Stage,Serbia,Brazil,0,2
+7568,2018-06-27,FIFA World Cup,2018,Group Stage,Switzerland,Costa Rica,2,2
+7571,2018-06-28,FIFA World Cup,2018,Group Stage,Senegal,Colombia,0,1
+7572,2018-06-28,FIFA World Cup,2018,Group Stage,Japan,Poland,0,1
+7569,2018-06-28,FIFA World Cup,2018,Group Stage,Panama,Tunisia,1,2
+7570,2018-06-28,FIFA World Cup,2018,Group Stage,England,Belgium,0,1
+7580,2018-06-30,FIFA World Cup,2018,Round of 16,France,Argentina,4,3
+7579,2018-06-30,FIFA World Cup,2018,Round of 16,Uruguay,Portugal,2,1
+7582,2018-07-01,FIFA World Cup,2018,Round of 16,Spain,Russia,1,1
+7581,2018-07-01,FIFA World Cup,2018,Round of 16,Croatia,Denmark,1,1
+7583,2018-07-02,FIFA World Cup,2018,Round of 16,Brazil,Mexico,2,0
+7584,2018-07-02,FIFA World Cup,2018,Round of 16,Belgium,Japan,3,2
+7586,2018-07-03,FIFA World Cup,2018,Round of 16,Sweden,Switzerland,1,0
+7585,2018-07-03,FIFA World Cup,2018,Round of 16,Colombia,England,1,1
+8649,2018-07-06,FIFA World Cup,2018,Quarter-finals,Uruguay,France,0,2
+8650,2018-07-06,FIFA World Cup,2018,Quarter-finals,Brazil,Belgium,1,2
+8651,2018-07-07,FIFA World Cup,2018,Quarter-finals,Sweden,England,0,2
+8652,2018-07-07,FIFA World Cup,2018,Quarter-finals,Russia,Croatia,2,2
+8655,2018-07-10,FIFA World Cup,2018,Semi-finals,France,Belgium,1,0
+8656,2018-07-11,FIFA World Cup,2018,Semi-finals,Croatia,England,2,1
+8657,2018-07-14,FIFA World Cup,2018,3rd Place Final,Belgium,England,2,0
+8658,2018-07-15,FIFA World Cup,2018,Final,France,Croatia,4,2
+3857286,2022-11-20,FIFA World Cup,2022,Group Stage,Qatar,Ecuador,0,2
+3857271,2022-11-21,FIFA World Cup,2022,Group Stage,England,Iran,6,2
+3857285,2022-11-21,FIFA World Cup,2022,Group Stage,Senegal,Netherlands,0,2
+3857282,2022-11-21,FIFA World Cup,2022,Group Stage,United States,Wales,1,1
+3857300,2022-11-22,FIFA World Cup,2022,Group Stage,Argentina,Saudi Arabia,1,2
+3857254,2022-11-22,FIFA World Cup,2022,Group Stage,Denmark,Tunisia,0,0
+3857265,2022-11-22,FIFA World Cup,2022,Group Stage,Mexico,Poland,0,0
+3857279,2022-11-22,FIFA World Cup,2022,Group Stage,France,Australia,4,1
+3857277,2022-11-23,FIFA World Cup,2022,Group Stage,Morocco,Croatia,0,0
+3857284,2022-11-23,FIFA World Cup,2022,Group Stage,Germany,Japan,1,2
+3857291,2022-11-23,FIFA World Cup,2022,Group Stage,Spain,Costa Rica,7,0
+3857268,2022-11-23,FIFA World Cup,2022,Group Stage,Belgium,Canada,1,0
+3857290,2022-11-24,FIFA World Cup,2022,Group Stage,Switzerland,Cameroon,1,0
+3857287,2022-11-24,FIFA World Cup,2022,Group Stage,Uruguay,South Korea,0,0
+3857298,2022-11-24,FIFA World Cup,2022,Group Stage,Portugal,Ghana,3,2
+3857258,2022-11-24,FIFA World Cup,2022,Group Stage,Brazil,Serbia,2,0
+3857273,2022-11-25,FIFA World Cup,2022,Group Stage,Wales,Iran,0,2
+3857301,2022-11-25,FIFA World Cup,2022,Group Stage,Qatar,Senegal,1,3
+3857274,2022-11-25,FIFA World Cup,2022,Group Stage,Netherlands,Ecuador,1,1
+3857272,2022-11-25,FIFA World Cup,2022,Group Stage,England,United States,0,0
+3857288,2022-11-26,FIFA World Cup,2022,Group Stage,Tunisia,Australia,0,1
+3857297,2022-11-26,FIFA World Cup,2022,Group Stage,Poland,Saudi Arabia,2,0
+3857266,2022-11-26,FIFA World Cup,2022,Group Stage,France,Denmark,2,1
+3857289,2022-11-26,FIFA World Cup,2022,Group Stage,Argentina,Mexico,2,0
+3857295,2022-11-27,FIFA World Cup,2022,Group Stage,Japan,Costa Rica,0,1
+3857283,2022-11-27,FIFA World Cup,2022,Group Stage,Belgium,Morocco,0,2
+3857281,2022-11-27,FIFA World Cup,2022,Group Stage,Croatia,Canada,4,1
+3857263,2022-11-27,FIFA World Cup,2022,Group Stage,Spain,Germany,1,1
+3857259,2022-11-28,FIFA World Cup,2022,Group Stage,Cameroon,Serbia,3,3
+3857299,2022-11-28,FIFA World Cup,2022,Group Stage,South Korea,Ghana,2,3
+3857269,2022-11-28,FIFA World Cup,2022,Group Stage,Brazil,Switzerland,1,0
+3857270,2022-11-28,FIFA World Cup,2022,Group Stage,Portugal,Uruguay,2,0
+3857267,2022-11-29,FIFA World Cup,2022,Group Stage,Ecuador,Senegal,1,2
+3857294,2022-11-29,FIFA World Cup,2022,Group Stage,Netherlands,Qatar,2,0
+3857261,2022-11-29,FIFA World Cup,2022,Group Stage,Wales,England,0,3
+3857278,2022-11-29,FIFA World Cup,2022,Group Stage,Iran,United States,0,1
+3857257,2022-11-30,FIFA World Cup,2022,Group Stage,Australia,Denmark,1,0
+3857275,2022-11-30,FIFA World Cup,2022,Group Stage,Tunisia,France,1,0
+3857260,2022-11-30,FIFA World Cup,2022,Group Stage,Saudi Arabia,Mexico,1,2
+3857264,2022-11-30,FIFA World Cup,2022,Group Stage,Poland,Argentina,0,2
+3857276,2022-12-01,FIFA World Cup,2022,Group Stage,Canada,Morocco,1,2
+3857296,2022-12-01,FIFA World Cup,2022,Group Stage,Croatia,Belgium,0,0
+3857255,2022-12-01,FIFA World Cup,2022,Group Stage,Japan,Spain,2,1
+3857292,2022-12-01,FIFA World Cup,2022,Group Stage,Costa Rica,Germany,2,4
+3857262,2022-12-02,FIFA World Cup,2022,Group Stage,South Korea,Portugal,2,1
+3857293,2022-12-02,FIFA World Cup,2022,Group Stage,Ghana,Uruguay,0,2
+3857256,2022-12-02,FIFA World Cup,2022,Group Stage,Serbia,Switzerland,2,3
+3857280,2022-12-02,FIFA World Cup,2022,Group Stage,Cameroon,Brazil,1,0
+3869117,2022-12-03,FIFA World Cup,2022,Round of 16,Netherlands,United States,3,1
+3869151,2022-12-03,FIFA World Cup,2022,Round of 16,Argentina,Australia,2,1
+3869152,2022-12-04,FIFA World Cup,2022,Round of 16,France,Poland,3,1
+3869118,2022-12-04,FIFA World Cup,2022,Round of 16,England,Senegal,3,0
+3869219,2022-12-05,FIFA World Cup,2022,Round of 16,Japan,Croatia,1,1
+3869253,2022-12-05,FIFA World Cup,2022,Round of 16,Brazil,South Korea,4,1
+3869220,2022-12-06,FIFA World Cup,2022,Round of 16,Morocco,Spain,0,0
+3869254,2022-12-06,FIFA World Cup,2022,Round of 16,Portugal,Switzerland,6,1
+3869420,2022-12-09,FIFA World Cup,2022,Quarter-finals,Croatia,Brazil,1,1
+3869321,2022-12-09,FIFA World Cup,2022,Quarter-finals,Netherlands,Argentina,2,2
+3869486,2022-12-10,FIFA World Cup,2022,Quarter-finals,Morocco,Portugal,1,0
+3869354,2022-12-10,FIFA World Cup,2022,Quarter-finals,England,France,1,2
+3869519,2022-12-13,FIFA World Cup,2022,Semi-finals,Argentina,Croatia,3,0
+3869552,2022-12-14,FIFA World Cup,2022,Semi-finals,France,Morocco,2,0
+3869684,2022-12-17,FIFA World Cup,2022,3rd Place Final,Croatia,Morocco,2,1
+3869685,2022-12-18,FIFA World Cup,2022,Final,Argentina,France,3,3
