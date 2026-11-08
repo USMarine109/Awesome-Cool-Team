@@ -10,9 +10,12 @@
 #include <random>
 using namespace std;
 
-#include "Fenwick_Tree.h"
-#include "Load_Dataset.h"
-#include "Segment_Tree.h"
+#include "../src/Fenwick_Tree.h"
+#include "../src/Load_Dataset.h"
+#include "../src/Segment_Tree.h"
+#include "../src/Fenwick_Tree.cpp"
+#include "../src/Segment_Tree.cpp"
+#include "../src/Load_Dataset.cpp"
 
 static int failures = 0, checks = 0;
 
@@ -28,10 +31,32 @@ static int failures = 0, checks = 0;
 static long long int naive(const vector<long long>& a, size_t n, size_t k)
 {
     long long int sum = 0;
-    for (size_t i = n; i < k; ++i) {
+    for (size_t i = n; i <= k; ++i) {
         sum += a[i];
     }
     return sum;
+}
+
+static void testEmptyAndSingle() {
+    SegmentTree<long long> s0(std::vector<long long>{});
+    FenwickTree<long long> f0(std::vector<long long>{});
+    CHECK(s0.size() == 0);
+    CHECK(f0.size() == 0);
+
+    SegmentTree<long long> s1(std::vector<long long>{42});
+    FenwickTree<long long> f1(std::vector<long long>{42});
+    CHECK(s1.query(0, 0) == 42);
+    CHECK(f1.query(0, 0) == 42);
+}
+
+static void testKnownValues() {
+    std::vector<long long> a = {1, 2, 3, 4, 5, 6, 7, 8};
+    SegmentTree<long long> s(a);
+    FenwickTree<long long> f(a);
+    CHECK(s.query(0, 7) == 36);
+    CHECK(f.query(0, 7) == 36);
+    CHECK(s.query(2, 5) == 18);
+    CHECK(f.query(2, 5) == 18);
 }
 
 static void testAllRangesSmall() {
