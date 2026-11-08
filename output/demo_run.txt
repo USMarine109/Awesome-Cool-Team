@@ -1,0 +1,47 @@
+Loading data/events.csv ...
+Loaded 462462 events from 128 matches in 477.4 ms (19180 events carry momentum).
+Selected: Argentina 3-3 France (FIFA World Cup 2022, Final, 2022-12-18)
+  match_id 3869685, 4407 events (global index 458055..462461), clock 0-125 min
+Segment Tree built over 462462 events (home + away trees) in 4.399 ms.
+Fenwick Tree built over 462462 events (home + away trees) in 3.765 ms.
+Momentum, minutes [30, 45) of Argentina vs France:
+  Segment Tree Argentina -2.0 | France -6.5 | net 4.5  (628 events, 0.95 us) [matches naive scan]
+  Fenwick Tree Argentina -2.0 | France -6.5 | net 4.5  (628 events, 0.58 us) [matches naive scan]
+  => Argentina had the momentum (by 4.5 points).
+Rolling 5-minute window, shift threshold 2.0 points (Argentina = +, France = -)
+Momentum shifts (11):
+  min  13: momentum swings to France (window net -2.0)
+  min  24: momentum swings to Argentina (window net 2.0)
+  min  33: momentum swings to France (window net -2.0)
+  min  36: momentum swings to Argentina (window net 3.5)
+  min  68: momentum swings to France (window net -3.5)
+  min  72: momentum swings to Argentina (window net 2.0)
+  min  80: momentum swings to France (window net -5.0)
+  min  86: momentum swings to Argentina (window net 2.0)
+  min  94: momentum swings to France (window net -2.0)
+  min  99: momentum swings to Argentina (window net 2.0)
+  min 118: momentum swings to France (window net -4.5)
+Alert moments (strongest spells):
+  min 103-108: Argentina dominant, net 8.0
+  min  58- 63: Argentina dominant, net 6.0
+  min  33- 38: Argentina dominant, net 5.5
+  min  77- 82: France dominant, net -9.5
+  min 113-118: France dominant, net -4.5
+  min  63- 68: France dominant, net -3.5
+  goal in minute 22 by Argentina
+  goal in minute 35 by Argentina
+  goal in minute 79 by France
+  goal in minute 80 by France
+  goal in minute 107 by Argentina
+  goal in minute 117 by France
+Benchmark: 1000000 random range queries, 1000000 random point updates, build averaged over 5 runs, seed 42
+| n (events) | Seg build (ms) | BIT build (ms) | Seg query (ns) | BIT query (ns) | Naive query (ns) | Seg update (ns) | BIT update (ns) | Seg memory | BIT memory | Verified vs naive |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|:---|
+| 10000 | 0.013 | 0.014 | 79.9 | 20.0 | 908 | 10.2 | 14.5 | 156.3 KiB | 78.2 KiB | 4000 queries OK |
+| 100000 | 0.225 | 0.181 | 114.9 | 27.5 | 9747 | 13.6 | 15.9 | 1562.5 KiB | 781.3 KiB | 4000 queries OK |
+| 462462 | 1.014 | 0.860 | 135.7 | 32.3 | 50225 | 24.9 | 27.4 | 7226.0 KiB | 3613.0 KiB | 4000 queries OK |
+At n=462462: Fenwick query is 4.20x the speed of Segment Tree, Segment Tree uses 2.00x the memory; trees are ~370x faster than a naive scan.
+Saved table to output/benchmark.md
+Exported per-minute series to output/momentum_3869685.csv
+plot written: output/momentum_3869685.png
+Saved plot to output/momentum_3869685.png
