@@ -155,4 +155,5 @@ void SegmentTree<T>::check(
 
 // Generate implementation for long long
 template class SegmentTree<long long>;
+template class SegmentTree<double>;
 
