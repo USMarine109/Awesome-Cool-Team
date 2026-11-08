@@ -142,3 +142,4 @@ void FenwickTree<T>::check(
 
 // Generate implementation for long long
 template class FenwickTree<long long>;
+template class FenwickTree<double>;
