@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <chrono>
 #include <cmath>
+#include <filesystem>
 #include <fstream>
 #include <random>
 #include <sstream>
@@ -97,6 +98,22 @@ namespace {
             sum += a[i];
         return sum;
     }
+    std::string resolvePath(const std::string& path) {
+        if (std::filesystem::exists(path)) {
+            return path;
+        }
+        std::vector<std::string> candidates = {
+            "../" + path,
+            "../../" + path,
+            "../../../" + path
+        };
+        for (const auto& c : candidates) {
+            if (std::filesystem::exists(c)) {
+                return c;
+            }
+        }
+        return path;
+    }
 }
 
 std::string Match::label() const {
@@ -111,8 +128,11 @@ std::string Match::label() const {
 bool Tracker::load(const std::string& eventsCsv,
                    const std::string& matchesCsv,
                    std::string& err) {
-    std::ifstream fm(matchesCsv);
-    std::ifstream fe(eventsCsv);
+    std::string actualMatches = resolvePath(matchesCsv);
+    std::string actualEvents = resolvePath(eventsCsv);
+
+    std::ifstream fm(actualMatches);
+    std::ifstream fe(actualEvents);
 
     if (!fm) {
         err = "Cannot open " + matchesCsv;
