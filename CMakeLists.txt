@@ -7,7 +7,7 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-include_directories(include)
+include_directories(include src)
 
 add_executable(Awesome_Cool_Team_momentum src/main.cpp
         src/Load_Dataset.cpp
